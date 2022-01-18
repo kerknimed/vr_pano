@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pchen66/panolens.js.git"
+    "url": "https://github.com/kerknimed/vr_pano.git"
   },
   "keywords": [
     "panorama",
@@ -48,7 +48,7 @@
   "author": "kerkni",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pchen66/panolens.js/issues"
+    "url": "https://github.com/kerknimed/vr_pano/issues"
   },
   "homepage": "https://pchen66.github.io/Panolens/",
   "eslintConfig": {

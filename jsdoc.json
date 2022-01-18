@@ -39,7 +39,7 @@
         "collapse": true,
         "menu":{
             "Github":{
-                "href":"https://github.com/pchen66/panolens.js",
+                "href":"https://github.com/kerknimed/vr_pano",
                 "target":"_blank",
                 "class":"menu-item",
                 "id":"repository"
