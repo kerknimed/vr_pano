@@ -1,77 +1,59 @@
-# Panolens.js
+# Javascript VR Video: React Version!
+React is a JavaScript library for building user interfaces.
 
-[![NPM package][npm]][npm-url]
-[![License][license]][license-url]
-[![Bundle Size][bundle-size]][bundle-size-url]
-[![Build Status][build-status]][build-status-url]
-[![Dependencies][dependencies]][dependencies-url]
-[![Dev Dependencies][dev-dependencies]][dev-dependencies-url]
-[![Language Grade][lgtm]][lgtm-url]
-[![Coverage][coverage]][coverage-url]
+Declarative: React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable, simpler to understand, and easier to debug.
+Component-Based: Build encapsulated components that manage their own state, then compose them to make complex UIs. Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+Learn Once, Write Anywhere: We don't make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code. React can also render on the server using Node and power mobile apps using React Native.
+Learn how to use React in your own project.
 
-## Javascript 360 Panorama Viewer
+Installation
+React has been designed for gradual adoption from the start, and you can use as little or as much React as you need:
 
-Panolens.js is an event-driven and WebGL based panorama viewer. Lightweight and flexible. It's built on top of [Three.JS](https://github.com/mrdoob/three.js).
+Use Online Playgrounds to get a taste of React.
+Add React to a Website as a <script> tag in one minute.
+Create a New React App if you're looking for a powerful JavaScript toolchain.
+You can use React as a <script> tag from a CDN, or as a react package on npm.
 
-[Examples](https://pchen66.github.io/Panolens/#Example) &mdash;
-[Documentation](https://pchen66.github.io/panolens.js) &mdash;
-[Migration](https://github.com/kerknimed/vr_pano/wiki/MigrationGuide) &mdash;
-[FAQ](https://github.com/kerknimed/vr_pano/wiki/Frequently-Asked-Questions)
+Documentation
+You can find the React documentation on the website.
 
-<p align="center">
-  <img alt= "Panorama Demo" style="object-fit:cover" src="https://github.com/pchen66/pchen66.github.io/blob/master/Panolens/images/panolens.gif?raw=true">
-</p>
+Check out the Getting Started page for a quick overview.
 
-## Usage
+The documentation is divided into several sections:
 
-Include `three.min.js` and `panolens.min.js`
+Tutorial
+Main Concepts
+Advanced Guides
+API Reference
+Where to Get Support
+Contributing Guide
+You can improve it by sending pull requests to this repository.
 
-To find the correct supported versions, please check `dependencies` section in `package.json` or acess `PANOLENS.VERSION` or `PANOLENS.THREE_VERSION` at runtime.
+Examples
+We have several examples on the website. Here is the first one to get you started:
 
-```html
-<script src="js/three.min.js"></script>
-<script src="js/panolens.min.js"></script>
-```
-The following code generates a 360 image panorama. The first panorama added to the viewer will be the entry point. To link panoramas, use `panorama.link( other_panorama, new THREE.Vector3( X, Y, Z ) )` to connect the two.
-```javascript
-const panorama = new PANOLENS.ImagePanorama( 'asset/equirectangular.jpg' );
-const viewer = new PANOLENS.Viewer();
-viewer.add( panorama );
-```
- 
-## Dependency
+function HelloMessage({ name }) {
+  return <div>Hello {name}</div>;
+}
 
-Panolens.js includes [Tween.js](https://github.com/tweenjs/tween.js/) by default, meaning `TWEEN` will be available with `window` object
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  document.getElementById('container')
+);
+This example will render "Hello Taylor" into a container on the page.
 
-## How to contribute
+You'll notice that we used an HTML-like syntax; we call it JSX. JSX is not required to use React, but it makes code more readable, and writing it feels like writing HTML. If you're using React as a <script> tag, read this section on integrating JSX; otherwise, the recommended JavaScript toolchains handle it automatically.
 
-Always make your contributions for the latest `dev` branch, not `master`, so it can be tracked for the next release. 
+Contributing
+The main purpose of this repository is to continue evolving React core, making it faster and easier to use. Development of React happens in the open on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Read below to learn how you can take part in improving React.
 
-### **Development**
-```
-npm start
-```
+Code of Conduct
+Facebook has adopted a Code of Conduct that we expect project participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
 
-### **Build**
-```
-npm run build-closure
-```
+Contributing Guide
+Read our contributing guide to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to React.
 
-[npm]: https://img.shields.io/npm/v/panolens.svg
-[npm-url]:https://www.npmjs.com/package/panolens
-[license]: https://img.shields.io/github/license/pchen66/panolens.js.svg
-[license-url]: ./LICENSE
-[bundle-size]: https://badgen.net/bundlephobia/minzip/panolens
-[bundle-size-url]: https://bundlephobia.com/result?p=panolens
-[build-status]: https://travis-ci.com/pchen66/panolens.js.svg?branch=dev
-[build-status-url]: https://travis-ci.com/pchen66/panolens.js
-[dependencies]: https://img.shields.io/david/pchen66/panolens.js.svg
-[dependencies-url]: https://david-dm.org/pchen66/panolens.js
-[dev-dependencies]: https://img.shields.io/david/dev/pchen66/panolens.js.svg
-[dev-dependencies-url]: https://david-dm.org/pchen66/panolens.js?type=dev
-[lgtm]: https://img.shields.io/lgtm/grade/javascript/g/pchen66/panolens.js.svg?logo=lgtm&logoWidth=18&label=code%20quality
-[lgtm-url]: https://lgtm.com/projects/g/pchen66/panolens.js/context:javascript
-[coverage]: https://coveralls.io/repos/github/pchen66/panolens.js/badge.svg?branch=dev
-[coverage-url]: https://coveralls.io/github/pchen66/panolens.js?branch=dev
-[panolens-support]: https://pics.paypal.com/00/p/NDIyZmRiMGEtMGQyMy00Y2QzLWI1YWQtZmY1OGI1MzRjNDYw/image_2.PNG
-[panolens-support-url]: https://www.paypal.me/panolens
+Good First Issues
+To help you get your feet wet and get you familiar with our contribution process, we have a list of good first issues that contain bugs which have a relatively limited scope. This is a great place to get started.
+
+
